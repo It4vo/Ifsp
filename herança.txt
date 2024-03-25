@@ -1,0 +1,37 @@
+A herança em Python permite que uma classe herde atributos e métodos de outra classe. Isso promove a reutilização de código e ajuda na organização hierárquica de classes.
+
+Para definir uma classe que herda de outra classe em Python, você usa a seguinte sintaxe:
+
+python
+Copy code
+class ClasseFilha(ClassePai):
+    # corpo da classe filha
+    # pode conter métodos e atributos adicionais
+A classe filha herda todos os métodos e atributos da classe pai.
+A classe filha também pode ter métodos e atributos adicionais que são específicos para ela.
+Quando um método é chamado em uma instância da classe filha, o Python procura primeiro na classe filha e, se não encontrar, continua procurando na classe pai e nas superclasses até encontrar a implementação do método.
+Exemplo:
+
+python
+Copy code
+class Animal:
+    def fazer_som(self):
+        print("Som genérico de animal")
+
+class Cachorro(Animal):
+    def fazer_som(self):
+        print("Au au")
+
+class Gato(Animal):
+    def fazer_som(self):
+        print("Miau")
+
+# Exemplo de uso
+cachorro = Cachorro()
+cachorro.fazer_som()  # Saída: Au au
+
+gato = Gato()
+gato.fazer_som()  # Saída: Miau
+Neste exemplo, a classe Cachorro e a classe Gato herdam da classe Animal. Ambas as classes filhas sobrescrevem o método fazer_som, fornecendo implementações específicas para cada tipo de animal.
+
+Espero que este resumo seja útil para a sua prova! Boa sorte!
